@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benvisio — AI-Powered Benefits Intelligence</title>
+  <meta name="description" content="The AI platform that transforms employer health benefits. Unprecedented visibility into plan performance, cost drivers, and optimization opportunities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar">
+  <div class="container">
+    <a href="#" class="navbar-brand">
+      <div class="navbar-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+      </div>
+      <span>Benvisio</span>
+    </a>
+    <div class="navbar-links">
+      <a href="#brokers">For Brokers</a>
+      <a href="#hr-leaders">For HR Leaders</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#platform">Platform</a>
+      <a href="#cta" class="navbar-cta">Request Early Access</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-orb-1"></div>
+  <div class="hero-orb-2"></div>
+  <div class="hero-content">
+    <div class="hero-badge">&#10024; AI-Powered Benefits Intelligence</div>
+    <h1>The AI Platform That <span class="gradient-text">Transforms</span> Employee Benefits</h1>
+    <p>Benvisio gives brokers and HR leaders unprecedented visibility into health plan performance, cost drivers, and optimization opportunities — powered by conversational AI.</p>
+    <div class="hero-buttons">
+      <a href="#brokers" class="btn-primary">For Benefits Consultants &rarr;</a>
+      <a href="#hr-leaders" class="btn-outline">For HR & Benefits Leaders &rarr;</a>
+    </div>
+  </div>
+  <div class="hero-fade"></div>
+</section>
+
+<!-- ========== PROBLEM ========== -->
+<section class="section section-light" id="problem">
+  <div class="container text-center">
+    <p class="section-label">The Challenge</p>
+    <h2 class="section-title">The $1.59 Trillion Problem</h2>
+    <p class="section-subtitle">US employer health benefits is the largest private insurance market on earth — and one of the least transparent.</p>
+    <div class="problem-grid">
+      <div class="problem-card fade-in">
+        <div class="problem-icon">&#128176;</div>
+        <h3>Opaque Pricing</h3>
+        <p>Carriers set rates with little transparency. Employers can't tell if they're overpaying by 5% or 25%.</p>
+      </div>
+      <div class="problem-card fade-in">
+        <div class="problem-icon">&#128200;</div>
+        <h3>Above-Inflation Renewals</h3>
+        <p>Average renewal increases of 8-12% — far outpacing wages. Budgets strained with no clear path to optimize.</p>
+      </div>
+      <div class="problem-card fade-in">
+        <div class="problem-icon">&#128196;</div>
+        <h3>Spreadsheet Chaos</h3>
+        <p>Brokers juggle dozens of carrier quotes in Excel. Apples-to-oranges comparisons miss the best options.</p>
+      </div>
+      <div class="problem-card fade-in">
+        <div class="problem-icon">&#10067;</div>
+        <h3>Incomplete Data</h3>
+        <p>HR leaders make million-dollar decisions without claims analytics, network analysis, or employee impact data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CHAT DEMO ========== -->
+<section class="section section-dark" id="demo">
+  <div class="container text-center">
+    <p class="section-label">Conversational AI</p>
+    <h2 class="section-title">Just Ask. Benvisio Does the Rest.</h2>
+    <p class="section-subtitle">No complex dashboards to learn. Ask a question in plain English and get rich, visual answers with actionable next steps.</p>
+    <div class="browser-frame fade-in">
+      <div class="browser-chrome">
+        <div class="browser-dots"><span></span><span></span><span></span></div>
+        <div class="browser-url">app.benvisio.com</div>
+      </div>
+      <div class="browser-body">
+        <img src="screenshots/chat-full.png" alt="Benvisio AI chat interface showing employer analysis with interactive cards and action buttons">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== APP SHOWCASE ========== -->
+<section class="section section-light" id="showcase">
+  <div class="container text-center">
+    <p class="section-label">See It In Action</p>
+    <h2 class="section-title">Powerful Insights, Beautiful Interface</h2>
+    <p class="section-subtitle">Rich visual reports and interactive analysis tools — designed for fast, confident decision-making.</p>
+
+    <div class="showcase-tabs" style="margin-top:40px">
+      <button class="showcase-tab active" onclick="showScreenshot(0)">&#127970; Employer Overview</button>
+      <button class="showcase-tab" onclick="showScreenshot(1)">&#128202; Benchmarks</button>
+      <button class="showcase-tab" onclick="showScreenshot(2)">&#128269; Alternatives</button>
+      <button class="showcase-tab" onclick="showScreenshot(3)">&#9878;&#65039; Funding Strategy</button>
+      <button class="showcase-tab" onclick="showScreenshot(4)">&#128101; Employee Impact</button>
+    </div>
+
+    <div class="showcase-content" style="margin-top:8px">
+      <div class="showcase-text" style="text-align:left">
+        <div class="showcase-icon" id="showcase-icon" style="background:linear-gradient(135deg,#3B82F6,#6366F1)">&#127970;</div>
+        <h3 id="showcase-title">Instant Employer Profile & Renewal Analysis</h3>
+        <p id="showcase-desc">See the complete picture in seconds: current plans, enrollment, premiums, renewal increase, and census demographics — all in one rich visual card.</p>
+      </div>
+      <div>
+        <div class="showcase-frame">
+          <div class="browser-chrome">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="browser-url">app.benvisio.com</div>
+          </div>
+          <div class="browser-body">
+            <img id="showcase-img" src="screenshots/employer-summary.png" alt="Employer summary analysis">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOR BROKERS ========== -->
+<section class="section section-gray" id="brokers">
+  <div class="container text-center">
+    <p class="section-label">For Benefits Consultants</p>
+    <h2 class="section-title">Supercharge Your Practice</h2>
+    <p class="section-subtitle">Serve more clients, deliver better outcomes, grow your book of business.</p>
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#9889;</div>
+        <h3>Instant Market Analysis</h3>
+        <p>Compare plans across every carrier, every funding strategy, every plan design in seconds. No more manual spreadsheet comparisons.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#129504;</div>
+        <h3>AI-Powered Recommendations</h3>
+        <p>Our AI analyzes claims data, census demographics, network adequacy, and market benchmarks to surface the optimal strategy for each client.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#128101;</div>
+        <h3>Employee Impact Analysis</h3>
+        <p>Before recommending a plan switch, see exactly which employees' doctors would be affected. Network overlap %, disruption risk, transition recommendations.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#9878;&#65039;</div>
+        <h3>Funding Strategy Comparison</h3>
+        <p>Fully funded vs. self-funded vs. level-funded vs. ICHRA — side-by-side with real cost projections, risk analysis, and tailored pros/cons.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#128737;&#65039;</div>
+        <h3>Compliance Confidence</h3>
+        <p>ACA affordability, ERISA requirements, CAA disclosure rules — automatically checked and flagged. Never miss a regulatory requirement.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#128640;</div>
+        <h3>10x More Clients</h3>
+        <p>What used to take days of analysis now takes minutes. Serve more clients without sacrificing quality. Your expertise + our AI = unbeatable.</p>
+      </div>
+    </div>
+    <div class="testimonial fade-in">
+      <blockquote>&ldquo;Benvisio cut my renewal analysis time from 3 days to 30 minutes. I&rsquo;ve doubled my book of business while delivering better outcomes for every client.&rdquo;</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#3B82F6,#06B6D4)">JM</div>
+        <div>
+          <div class="testimonial-name">James Mitchell</div>
+          <div class="testimonial-role">Senior Benefits Consultant, 15 years experience</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOR HR LEADERS ========== -->
+<section class="section section-dark" id="hr-leaders">
+  <div class="container text-center">
+    <p class="section-label">For HR & Benefits Leaders</p>
+    <h2 class="section-title">Benefits Intelligence for the C-Suite</h2>
+    <p class="section-subtitle">Finally understand where every dollar goes — and how to optimize it.</p>
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#128065;</div>
+        <h3>Total Benefits Visibility</h3>
+        <p>See your complete benefits landscape in one place: medical, dental, vision, life, disability, stop-loss. Know exactly what you're paying and why.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#128200;</div>
+        <h3>Claims Analytics & Cost Drivers</h3>
+        <p>Understand what's driving your costs: inpatient vs outpatient vs pharmacy, large claimants, specialty drug trends — with actionable recommendations.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#128202;</div>
+        <h3>Benchmark Against Peers</h3>
+        <p>How do your benefits compare to companies your size in your industry? Premium per employee, contribution %, deductible levels, satisfaction scores.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#9876;&#65039;</div>
+        <h3>Renewal Negotiation Power</h3>
+        <p>Walk into carrier meetings with data, not hope. Know your market position, have alternatives ready, and negotiate from strength.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#128218;</div>
+        <h3>Explore Every Option</h3>
+        <p>Fully insured, self-funded, level-funded, ICHRA, bundled, best-of-breed — Benvisio models every strategy so you can make confident decisions.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">&#128260;</div>
+        <h3>Continuous Optimization</h3>
+        <p>Benefits aren't a once-a-year decision. Benvisio monitors plan performance and surfaces savings opportunities throughout the year.</p>
+      </div>
+    </div>
+    <div class="testimonial fade-in">
+      <blockquote>&ldquo;For the first time, I could show our CFO exactly where our $2M benefits spend was going — and present three concrete strategies to save 15%. The board approved changes in one meeting.&rdquo;</blockquote>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar" style="background:linear-gradient(135deg,#A855F7,#EC4899)">SR</div>
+        <div>
+          <div class="testimonial-name">Sarah Rodriguez</div>
+          <div class="testimonial-role">VP of People, 485-employee professional services firm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section class="section section-light" id="how-it-works">
+  <div class="container text-center">
+    <p class="section-label">How It Works</p>
+    <h2 class="section-title">Three Steps to Better Benefits</h2>
+    <div class="steps">
+      <div class="step fade-in">
+        <div class="step-icon" style="background:linear-gradient(135deg,#3B82F6,#06B6D4)">&#128228;</div>
+        <div class="step-num">Step 01</div>
+        <h3>Connect Your Data</h3>
+        <p>Upload your census, claims data, plan documents, or connect to your benefits admin platform. Benvisio ingests and structures everything automatically.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-icon" style="background:linear-gradient(135deg,#8B5CF6,#A855F7)">&#128172;</div>
+        <div class="step-num">Step 02</div>
+        <h3>Ask Anything</h3>
+        <p>Have a natural conversation with your AI benefits consultant. Ask about renewals, compare alternatives, model funding strategies — all in plain English.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-icon" style="background:linear-gradient(135deg,#10B981,#14B8A6)">&#128202;</div>
+        <div class="step-num">Step 03</div>
+        <h3>Get Actionable Intelligence</h3>
+        <p>Rich visual reports, side-by-side comparisons, employee impact analysis, and clear recommendations. Export board-ready presentations in one click.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PLATFORM ========== -->
+<section class="section section-gray" id="platform">
+  <div class="container text-center">
+    <p class="section-label">Platform</p>
+    <h2 class="section-title">Everything You Need in One Place</h2>
+    <p class="section-subtitle">A comprehensive suite of AI-powered tools designed for the complexity of employer health benefits.</p>
+    <div class="platform-grid">
+      <div class="platform-item fade-in"><span>&#128172;</span> Conversational AI</div>
+      <div class="platform-item fade-in"><span>&#128295;</span> 15+ Analysis Tools</div>
+      <div class="platform-item fade-in"><span>&#128200;</span> Claims Analytics</div>
+      <div class="platform-item fade-in"><span>&#128161;</span> Network Scoring</div>
+      <div class="platform-item fade-in"><span>&#9878;&#65039;</span> Funding Strategy Modeling</div>
+      <div class="platform-item fade-in"><span>&#128737;&#65039;</span> Compliance Engine</div>
+      <div class="platform-item fade-in"><span>&#128101;</span> Employee Impact Analysis</div>
+      <div class="platform-item fade-in"><span>&#128202;</span> Benchmark Database</div>
+      <div class="platform-item fade-in"><span>&#9748;</span> Stop-Loss Quoting</div>
+      <div class="platform-item fade-in"><span>&#128218;</span> Bundle Optimization</div>
+      <div class="platform-item fade-in"><span>&#10084;&#65039;</span> ICHRA Planning</div>
+      <div class="platform-item fade-in"><span>&#128196;</span> Document Parsing</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STATS ========== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat fade-in"><div class="stat-value gradient-text">$1.59T</div><div class="stat-label">US employer benefits market</div></div>
+      <div class="stat fade-in"><div class="stat-value gradient-text">8.5%</div><div class="stat-label">Average renewal increase</div></div>
+      <div class="stat fade-in"><div class="stat-value gradient-text">15-25%</div><div class="stat-label">Typical savings identified</div></div>
+      <div class="stat fade-in"><div class="stat-value gradient-text">10x</div><div class="stat-label">Faster analysis</div></div>
+      <div class="stat fade-in"><div class="stat-value gradient-text">15+</div><div class="stat-label">AI analysis tools</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="section section-light cta-section" id="cta">
+  <div class="container text-center">
+    <p class="section-label">Early Access Program</p>
+    <h2 class="section-title">Ready to Transform Your Benefits Strategy?</h2>
+    <p class="section-subtitle">Join forward-thinking brokers and HR leaders who are already using AI to deliver better outcomes.</p>
+    <form class="cta-form" onsubmit="event.preventDefault()">
+      <input type="email" class="cta-input" placeholder="Enter your work email">
+      <button type="submit" class="cta-submit">Get Access &rarr;</button>
+    </form>
+    <p class="cta-note">Join 50+ organizations in our early access program. No credit card required.</p>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#" class="navbar-brand">
+        <div class="navbar-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <span style="font-size:18px">Benvisio</span>
+      </a>
+      <div class="footer-links">
+        <a href="#platform">Product</a>
+        <a href="#brokers">For Brokers</a>
+        <a href="#hr-leaders">For HR Leaders</a>
+        <a href="#how-it-works">How It Works</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Benvisio. All rights reserved.</p>
+      <p>Benvisio is not a licensed insurance broker. We provide decision-support tools and analytics.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== SCRIPTS ========== -->
+<script>
+// Fade-in on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Showcase tabs
+const screenshots = [
+  { icon: '&#127970;', color: '#3B82F6,#6366F1', title: 'Instant Employer Profile & Renewal Analysis', desc: 'See the complete picture in seconds: current plans, enrollment, premiums, renewal increase, and census demographics — all in one rich visual card.', img: 'screenshots/employer-summary.png' },
+  { icon: '&#128202;', color: '#F59E0B,#F97316', title: 'Know Where You Stand vs. Your Peers', desc: 'Compare premium per employee, employer contribution %, deductible levels, renewal trends, and satisfaction scores against industry averages — with percentile rankings.', img: 'screenshots/benchmarks.png' },
+  { icon: '&#128269;', color: '#8B5CF6,#A855F7', title: 'Find Better Plans in Seconds', desc: 'Search across carriers and plan types. See savings vs. your renewal, network scores, HSA eligibility — ranked by value. What used to take days happens instantly.', img: 'screenshots/alternatives.png' },
+  { icon: '&#9878;&#65039;', color: '#10B981,#14B8A6', title: 'Fully Funded vs. Self-Funded vs. ICHRA', desc: 'Side-by-side cost projections, risk analysis, pros and cons for each funding approach — with a clear recommendation based on your employer\'s profile.', img: 'screenshots/funding-strategy.png' },
+  { icon: '&#128101;', color: '#F97316,#EF4444', title: 'See Which Employees Are Affected Before You Switch', desc: 'Network overlap analysis shows exactly which employees\' doctors would be out-of-network. Disruption risk by specialty, high-risk patients flagged, transition recommendations.', img: 'screenshots/employee-impact.png' },
+];
+
+function showScreenshot(i) {
+  const s = screenshots[i];
+  document.getElementById('showcase-icon').innerHTML = s.icon;
+  document.getElementById('showcase-icon').style.background = 'linear-gradient(135deg,' + s.color + ')';
+  document.getElementById('showcase-title').textContent = s.title;
+  document.getElementById('showcase-desc').textContent = s.desc;
+  document.getElementById('showcase-img').src = s.img;
+  document.querySelectorAll('.showcase-tab').forEach((t, j) => t.classList.toggle('active', j === i));
+}
+</script>
+
+</body>
+</html>
