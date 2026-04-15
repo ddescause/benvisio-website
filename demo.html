@@ -318,12 +318,7 @@
       </div>
       <div class="video-body" id="video-body">
         <!-- Replace YOUTUBE_VIDEO_ID with your actual video ID when ready -->
-        <div class="video-placeholder" onclick="loadVideo()">
-          <div class="play-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z"/></svg>
-          </div>
-          <p>Watch the 3-minute demo</p>
-        </div>
+        <iframe src="https://www.youtube.com/embed/PdXvCgpmZkE?rel=0" allow="autoplay; encrypted-media" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>
       </div>
     </div>
   </div>
@@ -471,12 +466,12 @@
                 <label for="interest">What are you most interested in?</label>
                 <select id="interest" name="interest">
                   <option value="">Select...</option>
+                  <option value="full-ai-agent">Full AI Agent (complete platform)</option>
                   <option value="renewal-analysis">Renewal analysis & benchmarking</option>
                   <option value="plan-comparison">Plan comparison & alternatives</option>
                   <option value="funding-strategy">Funding strategy (self-funded, ICHRA)</option>
                   <option value="claims-analytics">Claims & pharmacy analytics</option>
                   <option value="employee-impact">Employee impact analysis</option>
-                  <option value="full-platform">Full platform overview</option>
                   <option value="broker-practice">Growing my broker practice</option>
                 </select>
               </div>
@@ -530,19 +525,6 @@
 </footer>
 
 <script>
-// Video loader — replace VIDEO_ID with your YouTube/Loom video ID
-function loadVideo() {
-  const container = document.getElementById('video-body');
-  // Option 1: YouTube
-  // container.innerHTML = '<iframe src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-
-  // Option 2: Loom
-  // container.innerHTML = '<iframe src="https://www.loom.com/embed/VIDEO_ID?autoplay=1" allowfullscreen></iframe>';
-
-  // Placeholder until video is ready
-  alert('Demo video coming soon! Schedule a live demo below to see Benvisio in action with your own data.');
-}
-
 // Form submission via AJAX to Formspree
 document.getElementById('demo-form').addEventListener('submit', function(e) {
   e.preventDefault();
