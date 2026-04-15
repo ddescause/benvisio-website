@@ -417,7 +417,9 @@
             <h3>Schedule Your Demo</h3>
             <p class="form-subtitle">Fill out the form and we'll reach out within one business day.</p>
 
-            <form id="demo-form" onsubmit="submitForm(event)">
+            <form id="demo-form" action="https://formspree.io/f/xyklkogy" method="POST">
+              <input type="hidden" name="_subject" value="New Benvisio Demo Request">
+              <input type="text" name="_gotcha" style="display:none">
               <div class="form-row">
                 <div class="form-group">
                   <label for="firstName">First Name *</label>
@@ -541,25 +543,33 @@ function loadVideo() {
   alert('Demo video coming soon! Schedule a live demo below to see Benvisio in action with your own data.');
 }
 
-// Form submission
-function submitForm(e) {
+// Form submission via AJAX to Formspree
+document.getElementById('demo-form').addEventListener('submit', function(e) {
   e.preventDefault();
+  var form = this;
+  var btn = form.querySelector('.form-submit');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
 
-  // Collect form data
-  const form = document.getElementById('demo-form');
-  const data = new FormData(form);
-  const entries = Object.fromEntries(data.entries());
-
-  // Log to console (replace with actual endpoint later)
-  console.log('Demo request:', entries);
-
-  // TODO: Send to your backend / email service
-  // fetch('/api/demo-request', { method: 'POST', body: JSON.stringify(entries), headers: {'Content-Type': 'application/json'} });
-
-  // Show success
-  document.getElementById('form-content').style.display = 'none';
-  document.getElementById('form-success').classList.add('show');
-}
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(function(res) {
+    if (res.ok) {
+      document.getElementById('form-content').style.display = 'none';
+      document.getElementById('form-success').classList.add('show');
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Schedule My Demo →';
+      alert('Something went wrong. Please try again or email us directly.');
+    }
+  }).catch(function() {
+    btn.disabled = false;
+    btn.textContent = 'Schedule My Demo →';
+    alert('Network error. Please check your connection and try again.');
+  });
+});
 
 // Fade-in animations
 const observer = new IntersectionObserver((entries) => {
