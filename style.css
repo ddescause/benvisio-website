@@ -68,7 +68,8 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
 .hero-content { position: relative; z-index: 2; text-align: center; max-width: 860px; }
 .hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 100px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); font-size: 14px; color: #93C5FD; margin-bottom: 32px; }
-.hero h1 { font-size: clamp(40px, 6vw, 72px); font-weight: 800; color: white; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px; }
+.hero h1 { font-size: clamp(40px, 6vw, 72px); font-weight: 800; color: white; line-height: 1.1; margin-bottom: 16px; letter-spacing: -1px; }
+.hero-tagline { font-size: clamp(24px, 2.9vw, 34px); font-weight: 700; color: #93C5FD; margin: 0 0 28px; letter-spacing: -0.3px; }
 .hero p { font-size: 20px; color: var(--gray-400); max-width: 640px; margin: 0 auto 40px; line-height: 1.6; }
 .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 16px 32px; border-radius: 100px; background: var(--electric); color: white; font-size: 18px; font-weight: 600; transition: all 0.3s; box-shadow: 0 8px 32px rgba(59,130,246,0.3); }
@@ -140,6 +141,18 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .section-dark .feature-card h3 { color: white; }
 .feature-card p { font-size: 14px; color: var(--gray-500); line-height: 1.6; }
 .section-dark .feature-card p { color: var(--gray-400); }
+
+/* === Broker Outcome Cards (stat-led, not capability-led) === */
+.broker-outcomes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 56px; text-align: left; }
+.broker-outcome {
+  padding: 36px 32px; border-radius: 18px; background: white;
+  border: 1px solid var(--gray-200);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.broker-outcome:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(15,23,42,0.08); border-color: transparent; }
+.broker-outcome-num { font-size: clamp(44px, 5vw, 60px); font-weight: 800; line-height: 1; letter-spacing: -1.5px; margin-bottom: 16px; }
+.broker-outcome h3 { font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 12px; line-height: 1.3; }
+.broker-outcome p { font-size: 14px; color: var(--gray-500); line-height: 1.7; margin: 0; }
 
 /* === Illustrated Feature Cards === */
 .features-grid-illustrated { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px; }
